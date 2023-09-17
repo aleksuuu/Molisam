@@ -1,8 +1,11 @@
 CC=clang++ -std=c++11
 SRC=src/*.cpp
 
-IDIR=/usr/include/rtaudio
-LDIR=/usr/local/lib
+
+# this is specific to my weird setup; change it to wherever your libraries are
+
+IDIR=/opt/homebrew/Cellar/rtaudio/6.0.1/include/rtaudio
+LDIR=/opt/homebrew/lib
 
 DEPS=src/*.h $(IDIR)/*.h
 LIBS=-lrtaudio -lmonome

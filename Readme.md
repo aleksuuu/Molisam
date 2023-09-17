@@ -1,16 +1,17 @@
 # Molisam
+
 Minimal live sampler for Monome, based on a mlrv-like user interface.
 
 ###Installation
 Install [RTAudio](https://www.music.mcgill.ca/~gary/rtaudio/) and [libmonome](https://github.com/monome/libmonome) using your favourite package manager/compiler.
 
 Clone this repo:  
-  `$ git clone https://github.com/AskBre/Molisam`
-  
+ `$ git clone https://github.com/AskBre/Molisam`
+
 In the directory, type:  
-  `$ make`  
-  `$ ./Molisam`
-  
+ `$ make`  
+ `$ ./Molisam`
+
 ###Usage
 As of now, it's not really written for anyone else than myself and my own use, so if you want to configure stuff, you need to dive in the code itself (mainly `Sampler.h`). The default audio backend is used, which will depend on what is running on your system. I personally recommend and have used jack, but in theory it should support ALSA, PulseAudio, CoreAudio and OSS too.
 
